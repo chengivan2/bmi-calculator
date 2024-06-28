@@ -1,0 +1,26 @@
+.bmi-calc-main-hero-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.bmi-calc-main-hero-section-one {
+    position: relative;
+    display: flex;
+    min-height: 100%;
+    min-width: 50%;
+}
+
+.bmi-calc-main-hero-section-two {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px;
+    background-image: url('../../../../public/bmi-calc-main-image.jpg');
+    min-height: 100%;
+    min-width: 50%;
+}
