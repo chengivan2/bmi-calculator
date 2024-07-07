@@ -21,11 +21,14 @@
     align-items: flex-end;
     background-color: rgba(0, 0, 0);
     opacity: .9;
-    color: #f5f5f5;
     padding: 20px;
     background-image: url('../../../../public/bmi-calc-main-image.jpg');
     min-height: 100%;
     min-width: 40%;
+}
+
+.span-text {
+    color: hsl(37, 78%, 61%);
 }
 
 .bmi-calc-main-hero-section-two a {
