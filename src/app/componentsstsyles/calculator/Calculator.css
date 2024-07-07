@@ -1,4 +1,5 @@
 input[type="number"] {
+  width: 100%;
   font-size: 20px;
   border: none;
   outline: none;
@@ -9,9 +10,15 @@ input[type="number"] {
   text-align: center;
 }
 
-/* Change border color on hover */
-input[type="number"]:hover {
-  border-bottom: 1px solid hsla(37, 78%, 61%, 0.8); /* Yellowish color on hover */
+input[type="number"]:hover,
+input[type="number"]:focus {
+  border-bottom: 1px solid hsla(37, 78%, 61%, 0.8);
+}
+
+input[type="number"]::placeholder {
+  color: hsl(0, 0%, 60%);
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -28,6 +35,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .bmi-calculator-component label {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.6em;
@@ -44,4 +52,20 @@ input[type="number"]::-webkit-inner-spin-button {
   border-bottom: 1px solid hsla(37, 78%, 61%, 0.48);
   color: hsl(0, 1%, 72%);
   font-size: 24px;
+}
+
+.bmi-value {
+  text-align: center;
+}
+
+.bmi-value .bmi-title {
+  font-style: normal;
+}
+
+.bmi-value .bmi-calculated-value {
+  color: hsl(37, 78%, 61%);
+  font-size: 4em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }

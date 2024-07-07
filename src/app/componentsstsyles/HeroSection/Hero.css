@@ -42,7 +42,7 @@
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
+  font-style: oblique;
 }
 
 @media (max-width: 768px) {

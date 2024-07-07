@@ -19,6 +19,13 @@ function Calculator() {
     return "";
   };
 
+  const weightPlaceholder =
+    system === "imperial"
+      ? "Enter weight in pounds (lbs)"
+      : "Enter weight in kilograms (kg)";
+  const heightPlaceholder =
+    system === "imperial" ? "Enter height in inches (in)" : "Enter height in meters (m)";
+
   return (
     <div className="bmi-calculator-component">
       <label>
@@ -27,6 +34,7 @@ function Calculator() {
           type="number"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
+          placeholder={weightPlaceholder}
         />
       </label>
       <label>
@@ -35,6 +43,7 @@ function Calculator() {
           type="number"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
+          placeholder={heightPlaceholder}
         />
       </label>
       <label>
@@ -44,9 +53,11 @@ function Calculator() {
           <option value="metric">Metric (kg, meters)</option>
         </select>
       </label>
-      <p>
-        Your BMI: <span>{calculateBMI()}</span>
-      </p>
+
+      <div className="bmi-value">
+        <p className="bmi-title">Your BMI:</p>
+        <p className="bmi-calculated-value">{calculateBMI()}</p>
+      </div>
     </div>
   );
 }
