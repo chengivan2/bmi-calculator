@@ -1,5 +1,12 @@
-.bmi-calc-title{
-    letter-spacing: 2px;
-    font-weight: 800;
-    font-size: 48px;
+.bmi-calc-title {
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 4em;
+}
+
+.playwrite-de-gb {
+  font-family: "Arial";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
