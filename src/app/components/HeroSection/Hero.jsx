@@ -1,4 +1,5 @@
 import "../../componentsstsyles/HeroSection/Hero.css";
+import Calculator from "../calculator/Calculator";
 import { Title } from "../header/Title";
 
 export const Hero = () => {
@@ -7,6 +8,7 @@ export const Hero = () => {
       <div className="bmi-calc-main-hero-section-one">
         <div className="hero-section-one-title">
           <Title />
+          <Calculator />
         </div>
       </div>
       <div className="bmi-calc-main-hero-section-two">
