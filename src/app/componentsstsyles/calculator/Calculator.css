@@ -1,0 +1,47 @@
+input[type="number"] {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(0, 0%, 96%);
+  transition: border-bottom 0.8s ease;
+  background-color: transparent;
+  color: #fefefe;
+  text-align: center;
+}
+
+/* Change border color on hover */
+input[type="number"]:hover {
+  border-bottom: 1px solid hsla(37, 78%, 61%, 0.8); /* Yellowish color on hover */
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.bmi-calculator-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  padding: 2em 4em;
+}
+
+.bmi-calculator-component label {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+  justify-content: center;
+  align-items: center;
+}
+
+.bmi-calculator-component label select {
+  outline: none;
+  padding: 12px 60px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid hsla(37, 78%, 61%, 0.48);
+  color: hsl(0, 1%, 72%);
+  font-size: 24px;
+}

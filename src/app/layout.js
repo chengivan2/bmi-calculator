@@ -13,8 +13,6 @@ export default function RootLayout({ children }) {
         <style>
           @import
           url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-        </style>
-        <style>
           @import
           url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
         </style>

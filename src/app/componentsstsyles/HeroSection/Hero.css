@@ -8,6 +8,8 @@
 .bmi-calc-main-hero-section-one {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100%;
     min-width: 60%;
 }
@@ -41,4 +43,10 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .bmi-calc-main-hero-section-two {
+        display: none;
+    }
 }

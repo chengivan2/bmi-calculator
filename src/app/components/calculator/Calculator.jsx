@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "../../componentsstsyles/calculator/Calculator.css";
 
 function Calculator() {
-  const [weight, setWeight] = useState('');
-  const [height, setHeight] = useState('');
-  const [system, setSystem] = useState('imperial'); // Default to imperial
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
+  const [system, setSystem] = useState("imperial"); // Default to imperial
 
   const calculateBMI = () => {
-    const weightInKg = system === 'imperial' ? weight * 0.453592 : +weight;
-    const heightInM = system === 'imperial' ? height * 0.0254 : +height;
+    const weightInKg = system === "imperial" ? weight * 0.453592 : +weight;
+    const heightInM = system === "imperial" ? height * 0.0254 : +height;
 
     if (weightInKg > 0 && heightInM > 0) {
       const bmi = weightInKg / (heightInM * heightInM);
       return bmi.toFixed(2); // Round to 2 decimal places
     }
-    return '';
+    return "";
   };
 
   return (
-    <div>
-      <h2>BMI Calculator</h2>
+    <div className="bmi-calculator-component">
       <label>
         Weight:
         <input
@@ -44,7 +44,9 @@ function Calculator() {
           <option value="metric">Metric (kg, meters)</option>
         </select>
       </label>
-      <p>Your BMI: {calculateBMI()}</p>
+      <p>
+        Your BMI: <span>{calculateBMI()}</span>
+      </p>
     </div>
   );
 }
