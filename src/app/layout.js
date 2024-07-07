@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:wght@400;800;900&display=swap');
+          url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:wght@400;800;900&display=swap');
         </style>
       </head>
       <body>{children}</body>

@@ -49,4 +49,9 @@
     .bmi-calc-main-hero-section-two {
         display: none;
     }
+
+    .bmi-calc-main-hero-section {
+        justify-content: center;
+        align-items: center;
+    }
 }
