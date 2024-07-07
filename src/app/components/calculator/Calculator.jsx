@@ -49,7 +49,7 @@ function Calculator() {
         />
       </label>
       <label>
-        Measurement system:
+        Measurement System:
         <select value={system} onChange={(e) => setSystem(e.target.value)}>
           <option value="imperial">Imperial (lbs, inches)</option>
           <option value="metric">Metric (kg, meters)</option>
