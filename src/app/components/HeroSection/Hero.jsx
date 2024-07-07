@@ -17,7 +17,7 @@ export const Hero = () => {
           href="https://www.freepik.com/free-photo/posing-athletes-holding-weights_6412611.htm#from_view=detail_alsolike"
           target="_blank"
         >
-          Image by <span className="span-text">freepik</span>
+          Image by freepik
         </Link>
       </div>
     </section>

@@ -27,10 +27,6 @@
     min-width: 40%;
 }
 
-.span-text {
-    color: hsl(37, 78%, 61%);
-}
-
 .bmi-calc-main-hero-section-two a {
     background-color: hsla(0, 0%, 9%, 0.8);
     padding: 12px 60px;
